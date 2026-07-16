@@ -1,0 +1,571 @@
+{
+  "summary": {
+    "n_items": 21,
+    "retrieval": {
+      "hit@k": 1.0,
+      "hit@3": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.633,
+      "n": 18
+    },
+    "router_accuracy": 0.952,
+    "answer_quality": {
+      "correctness": 0.944,
+      "faithfulness": 0.944,
+      "relevancy": 0.944,
+      "n": 18
+    },
+    "top_k": 5
+  },
+  "rows": [
+    {
+      "id": "kb-01",
+      "question": "What is a Product Requirements Document?",
+      "category": "concept",
+      "retrieved_sources": [
+        "01-what-is-a-prd.md",
+        "01-what-is-a-prd.md",
+        "01-what-is-a-prd.md",
+        "01-what-is-a-prd.md",
+        "01-what-is-a-prd.md"
+      ],
+      "router_use_web": false,
+      "router_expected": false,
+      "router_correct": true,
+      "retrieval": {
+        "hit@k": true,
+        "hit@3": true,
+        "reciprocal_rank": 1.0,
+        "context_precision": 1.0
+      },
+      "answer": "A Product Requirements Document (PRD) is a written specification that describes what a product or feature should do, who it is for, and why it is worth building. It serves as the shared source of truth to align product, engineering, design, and business stakeholders on the definition of done before implementation begins. [1]\n\nKey purpose and content:\n- It answers: what problem are we solving, for whom, and how will we know we succeeded. It translates product strategy into concrete, buildable requirements. [2]\n- It is primarily a communication tool first and a specification second; it aims to reduce ambiguity, prevent rework, and help the team estimate, sequence, and test work with confidence. [2]\n- It states requirements and outcomes, not implementation details like database schemas or class hierarchies, and it is not a project plan or marketing brief. It focuses on the \"what\" and \"why,\" leaving most of the \"how\" to engineering. [3]\n\nOwnership and process:\n- The product manager owns the PRD, but it is written collaboratively. Engineering validates feasibility, design shapes the user experience, and stakeholders confirm the business case. The PM is accountable for keeping it coherent and current. [4]\n\nWhen to write one:\n- Write a PRD when the work is large or ambiguous enough that scope could be disputed, when multiple teams must coordinate, or when the cost of building the wrong thing is high. For smaller, well-understood changes, a ticket may suffice. [5]",
+      "judge": {
+        "correctness": 5,
+        "faithfulness": 5,
+        "relevancy": 5,
+        "rationale": "The answer accurately summarizes the definition, purpose, ownership, and when to use a PRD, mirroring all key points from the reference and retrieved context without adding unsupported claims."
+      }
+    },
+    {
+      "id": "kb-02",
+      "question": "Who owns the PRD on a product team?",
+      "category": "concept",
+      "retrieved_sources": [
+        "01-what-is-a-prd.md",
+        "01-what-is-a-prd.md",
+        "01-what-is-a-prd.md",
+        "01-what-is-a-prd.md",
+        "01-what-is-a-prd.md"
+      ],
+      "router_use_web": false,
+      "router_expected": false,
+      "router_correct": true,
+      "retrieval": {
+        "hit@k": true,
+        "hit@3": true,
+        "reciprocal_rank": 1.0,
+        "context_precision": 1.0
+      },
+      "answer": "- The product manager owns the PRD, but it is written collaboratively. Engineering validates feasibility, design shapes the user experience, and stakeholders confirm the business case. The PM is accountable for keeping it coherent and current. [1]\n\n- A PRD is a living document that should be versioned, dated, and updated as the team learns. Open questions should shrink over time. [2]",
+      "judge": {
+        "correctness": 5,
+        "faithfulness": 5,
+        "relevancy": 5,
+        "rationale": "The answer directly quotes and aligns with the reference answer and retrieved context, correctly stating that the PM owns the PRD and that it is collaborative among engineering, design, and stakeholders, and that the PRD is a living document versioned and updated over time."
+      }
+    },
+    {
+      "id": "kb-03",
+      "question": "What sections should a PRD contain?",
+      "category": "concept",
+      "retrieved_sources": [
+        "02-prd-structure-and-template.md",
+        "09-common-prd-mistakes.md",
+        "01-what-is-a-prd.md",
+        "01-what-is-a-prd.md",
+        "01-what-is-a-prd.md"
+      ],
+      "router_use_web": false,
+      "router_expected": false,
+      "router_correct": true,
+      "retrieval": {
+        "hit@k": true,
+        "hit@3": true,
+        "reciprocal_rank": 1.0,
+        "context_precision": 0.2
+      },
+      "answer": "- The sections listed as the typical content of a PRD, in order. [1]\n- Guidelines to keep the PRD skimmable and focused, including concise sections and where to present information (tables, short sections, open questions). [2]\n- Clear delineation of scope: a PRD states requirements and outcomes, not implementation details, and is not a project plan, marketing brief, or technical design doc. [3]\n- Versioning and living-document expectations: date, version, updates over time, shrinking open questions. [4]\n- The core purpose and questions a PRD should answer: what problem, for whom, and how we\u2019ll know we succeeded; translating strategy into concrete, buildable requirements. [5]\n\nIf you want, I can translate these into a concrete, sectioned PRD outline you can use directly.",
+      "judge": {
+        "correctness": 5,
+        "faithfulness": 5,
+        "relevancy": 5,
+        "rationale": "The answer accurately lists the standard PRD sections and aligns with the reference, including order, skimmable guidelines, scope distinctions, versioning, and the core purpose questions; it also offers a practical next step. All claims are supported by the retrieved context and directly address the question."
+      }
+    },
+    {
+      "id": "kb-04",
+      "question": "Why should a PRD include non-goals?",
+      "category": "concept",
+      "retrieved_sources": [
+        "02-prd-structure-and-template.md",
+        "01-what-is-a-prd.md",
+        "09-common-prd-mistakes.md",
+        "06-success-metrics-and-okrs.md",
+        "02-prd-structure-and-template.md"
+      ],
+      "router_use_web": false,
+      "router_expected": false,
+      "router_correct": true,
+      "retrieval": {
+        "hit@k": true,
+        "hit@3": true,
+        "reciprocal_rank": 1.0,
+        "context_precision": 0.6
+      },
+      "answer": "- Non-goals prevent scope creep and clarify boundaries by explicitly naming what is out of scope [1]. This helps stakeholders align on what will not be worked on, reducing ambiguity and rework later.\n- They help set boundaries for the project, ensuring the team and stakeholders stay focused on the agreed outcomes [1].\n- Since a PRD is a living document, having non-goals contributes to ongoing clarity as the product evolves and new questions arise [2]. They can be updated alongside other sections as learning occurs.\n- Including non-goals supports evaluating trade-offs and decisions later, by anchoring what is intentionally excluded when revisiting scope or prioritization [1].",
+      "judge": {
+        "correctness": 4,
+        "faithfulness": 4,
+        "relevancy": 4,
+        "rationale": "The answer correctly explains why non-goals are important (prevent scope creep, clarify boundaries, align stakeholders) and references the context that PRDs are living documents. It largely aligns with the reference answer and retrieved context, with minor elaboration but no inaccuracies."
+      }
+    },
+    {
+      "id": "kb-05",
+      "question": "How do I write a good user story?",
+      "category": "framework",
+      "retrieved_sources": [
+        "03-writing-user-stories.md",
+        "03-writing-user-stories.md",
+        "03-writing-user-stories.md",
+        "03-writing-user-stories.md",
+        "02-prd-structure-and-template.md"
+      ],
+      "router_use_web": false,
+      "router_expected": false,
+      "router_correct": true,
+      "retrieval": {
+        "hit@k": true,
+        "hit@3": true,
+        "reciprocal_rank": 1.0,
+        "context_precision": 0.8
+      },
+      "answer": "Here\u2019s how to write a good user story, grounded in the blocks you provided:\n\n- Focus on the goal and the user benefit, not the solution or widget. Avoid solutions disguised as stories and vague benefits; ensure the story has a testable outcome. If you can\u2019t write acceptance criteria, the story isn\u2019t ready [1].\n\n- Use the standard user-story template to capture the user, goal, and benefit. The \u201cso that\u201d clause is the most important because it states value and allows the team to consider alternative solutions that deliver the same outcome [2].\n\n- Follow INVEST to ensure quality: Independent, Negotiable, Valuable, Estimable, Small, and Testable. If a story fails one of these, split or clarify it [3].\n\n- Keep user stories intentionally brief; they\u2019re prompts for conversation, not full specifications. Details belong in acceptance criteria and in ongoing PM/design/engineering discussions [4].\n\n- Start with a precise description of the user problem (one or two sentences) that does not imply a solution. Include evidence from data, research, or customer quotes to show the problem is real and worth solving [5].\n\nIf you want, tell me the user type, the goal, and the benefit you have in mind, and I can help you draft a concise story with testable acceptance criteria.",
+      "judge": {
+        "correctness": 5,
+        "faithfulness": 5,
+        "relevancy": 5,
+        "rationale": "The answer faithfully reiterates the reference guidance: use the standard template, emphasize the 'so that' value, apply INVEST, keep it brief, and focus on problem descriptions with evidence; it also offers to help draft with acceptance criteria. No inaccuracies or deviations observed."
+      }
+    },
+    {
+      "id": "kb-06",
+      "question": "How do I split a user story that is too big?",
+      "category": "framework",
+      "retrieved_sources": [
+        "03-writing-user-stories.md",
+        "03-writing-user-stories.md",
+        "03-writing-user-stories.md",
+        "03-writing-user-stories.md",
+        "04-acceptance-criteria.md"
+      ],
+      "router_use_web": false,
+      "router_expected": false,
+      "router_correct": true,
+      "retrieval": {
+        "hit@k": true,
+        "hit@3": true,
+        "reciprocal_rank": 1.0,
+        "context_precision": 0.8
+      },
+      "answer": "Splitting a big user story (an epic) should focus on delivering user value in small, testable pieces. Use boundaries that reflect user value, not technical work.\n\n- Split along meaningful boundaries: workflow steps, user roles, data variations, happy path vs. edge cases, or CRUD operations (not by technical layers). This keeps each piece delivering value on its own. [1]\n- Ensure each resulting story still follows INVEST: independent, valuable, estimable, small, and testable with clear acceptance criteria. If a candidate piece fails these, split or clarify. [2]\n- Keep the story focused on user value with a clear role and benefit: use the \"As a [user], I want [goal] so that [benefit]\" template, emphasizing the \"so that\" value and allowing alternate solutions that still deliver it. [4]\n- Use acceptance criteria to define details: aim for 2\u20135 acceptance criteria per story to cover typical and edge cases without over-specifying. If there are too few or too many, reconsider the split. [3][2]\n\nIn short: break the epic along user-centric boundaries that deliver value, ensure each piece is independent and testable, write it as a user story with a clear value, and define 2\u20135 acceptance criteria. [1][2][4][3]",
+      "judge": {
+        "correctness": 4,
+        "faithfulness": 4,
+        "relevancy": 4,
+        "rationale": "Answer aligns with the reference: split along meaningful boundaries and avoid splitting by technical layers; mentions INVEST, acceptance criteria, and the user-story template. Some minor elaboration beyond the reference (e.g., reiterating INVEST and acceptance criteria counts) is consistent with retrieved context. Overall, direct, relevant, and faithful to the source."
+      }
+    },
+    {
+      "id": "kb-07",
+      "question": "What is the Given/When/Then format for acceptance criteria?",
+      "category": "framework",
+      "retrieved_sources": [
+        "04-acceptance-criteria.md",
+        "04-acceptance-criteria.md",
+        "04-acceptance-criteria.md",
+        "04-acceptance-criteria.md",
+        "02-prd-structure-and-template.md"
+      ],
+      "router_use_web": false,
+      "router_expected": false,
+      "router_correct": true,
+      "retrieval": {
+        "hit@k": true,
+        "hit@3": true,
+        "reciprocal_rank": 1.0,
+        "context_precision": 0.8
+      },
+      "answer": "- The Given/When/Then format is a widely used approach for acceptance criteria: Given [context], When [action], Then [outcome]. It maps directly to automated tests. Example: \u201cGiven a signed-in user with items in their cart, When they click Checkout, Then they are taken to the payment page with the cart total displayed.\u201d [1]\n\n- Acceptance criteria are the specific, testable conditions that must be true for a requirement or user story to be considered complete; they define the boundary of \u201cdone\u201d and form the basis for test cases and QA. [2]\n\n- Not every criterion must use Given/When/Then\u2014simple rule lists are acceptable when they make the expected behavior clearest. For example: \u201cThe password must be at least 12 characters,\u201d or \u201cUploads over 25 MB are rejected with a clear error.\u201d Use whichever form makes the behavior clearest. [3]\n\n- Strong acceptance criteria describe not only the happy path but also errors, empty states, permissions, and edge cases (e.g., network failure, invalid input, unauthorized users). Failing to cover these common scenarios is a frequent source of bugs. [4]\n\n- Acceptance criteria can be framed as capabilities the product must provide, each with a clear title, description, priority, and testable acceptance criteria. These are essentially testable statements of behavior. [5]",
+      "judge": {
+        "correctness": 5,
+        "faithfulness": 5,
+        "relevancy": 5,
+        "rationale": "The answer accurately mirrors the reference content, restating the Gherkin Given/When/Then format, notes that not all criteria must use it, and aligns with the listed retrieved points about acceptance criteria and testability."
+      }
+    },
+    {
+      "id": "kb-08",
+      "question": "How many acceptance criteria should a user story have?",
+      "category": "concept",
+      "retrieved_sources": [
+        "04-acceptance-criteria.md",
+        "04-acceptance-criteria.md",
+        "03-writing-user-stories.md",
+        "03-writing-user-stories.md",
+        "04-acceptance-criteria.md"
+      ],
+      "router_use_web": false,
+      "router_expected": false,
+      "router_correct": true,
+      "retrieval": {
+        "hit@k": true,
+        "hit@3": true,
+        "reciprocal_rank": 1.0,
+        "context_precision": 0.6
+      },
+      "answer": "- Aim for at least two to five acceptance criteria per story. Too few may miss edge cases; too many may indicate the story should be split. [1]\n\n- Acceptance criteria are the specific, testable conditions that define done and form the basis for tests and QA. [2]\n\n- Criteria should support a well-formed, testable story as part of INVEST (specifically Testable). If criteria are unclear or too many, reconsider split. [3]\n\n- Strong criteria cover happy path plus errors, empty states, permissions, and edge cases (e.g., network failure, invalid input, unauthorized user). Missing these commonly causes late bugs. [5]",
+      "judge": {
+        "correctness": 4,
+        "faithfulness": 4,
+        "relevancy": 4,
+        "rationale": "The answer accurately conveys the recommended range (2-5) and emphasizes including edge cases, aligns with the references [1], [5], and general acceptance criteria concepts [2], [3]. It occasionally rephrases or combines ideas, but stays faithful to the source. It could be tighter by explicitly citing all points from the reference, but remains correct and relevant."
+      }
+    },
+    {
+      "id": "kb-09",
+      "question": "When should I use RICE versus MoSCoW for prioritization?",
+      "category": "framework",
+      "retrieved_sources": [
+        "05-prioritization-frameworks.md",
+        "05-prioritization-frameworks.md",
+        "05-prioritization-frameworks.md",
+        "05-prioritization-frameworks.md",
+        "05-prioritization-frameworks.md"
+      ],
+      "router_use_web": false,
+      "router_expected": false,
+      "router_correct": true,
+      "retrieval": {
+        "hit@k": true,
+        "hit@3": true,
+        "reciprocal_rank": 1.0,
+        "context_precision": 1.0
+      },
+      "answer": "Use RICE when you need a rigorous, data-driven ranking and you have reliable data to score items. It provides a numeric comparison that helps you prioritize across many ideas objectively. [3]\n\nUse MoSCoW when you want speed and clear scope boundaries inside a single release. It\u2019s fast and communicates Must/Should/Could/Won\u2019t boundaries, but be prepared to cap the Must list to avoid scope drift. [1][2]\n\nAdditional guidance:\n- If the decision is complex with multiple weighted criteria (e.g., revenue, strategic fit, risk, effort) and you can agree on weights up front, you can score options against those weighted criteria. This approach is flexible but relies on agreed weights. [4]\n- In all cases, remember prioritization frameworks are tools to support judgment, not substitutes for it. [1]\n\nIf you want a quick rule-of-thumb: for speed and clear release boundaries, use MoSCoW; for a data-driven, numeric ranking, use RICE. [1]",
+      "judge": {
+        "correctness": 5,
+        "faithfulness": 5,
+        "relevancy": 5,
+        "rationale": "The answer accurately summarizes when to use RICE vs MoSCoW as per the reference, includes related nuances from the context, and remains aligned with the provided guidance without introducing unsupported claims."
+      }
+    },
+    {
+      "id": "kb-10",
+      "question": "What is the RICE scoring formula?",
+      "category": "framework",
+      "retrieved_sources": [
+        "05-prioritization-frameworks.md",
+        "05-prioritization-frameworks.md",
+        "05-prioritization-frameworks.md",
+        "05-prioritization-frameworks.md",
+        "09-common-prd-mistakes.md"
+      ],
+      "router_use_web": false,
+      "router_expected": false,
+      "router_correct": true,
+      "retrieval": {
+        "hit@k": true,
+        "hit@3": true,
+        "reciprocal_rank": 1.0,
+        "context_precision": 0.8
+      },
+      "answer": "The RICE formula is:\n\n- R = Reach\n- I = Impact\n- C = Confidence\n- E = Effort\n\nScore = (Reach \u00d7 Impact \u00d7 Confidence) / Effort\n\nNotes from our context:\n- Reach is how many users are affected in a period; Impact is how much it moves the goal per user (often 0.25 to 3); Confidence is a percentage discount for uncertainty; Effort is in person-months. Score is (Reach \u00d7 Impact \u00d7 Confidence) / Effort [1].\n- RICE is good when you have data and want a comparable numeric ranking [1].\n- It\u2019s one option among frameworks (e.g., MoSCoW, Kano) depending on rigor and data [2].",
+      "judge": {
+        "correctness": 5,
+        "faithfulness": 5,
+        "relevancy": 5,
+        "rationale": "The answer correctly states the RICE formula and its components, and aligns with the retrieved context and reference notes without introducing unsupported details."
+      }
+    },
+    {
+      "id": "kb-11",
+      "question": "What is the difference between leading and lagging indicators?",
+      "category": "concept",
+      "retrieved_sources": [
+        "06-success-metrics-and-okrs.md",
+        "02-prd-structure-and-template.md",
+        "06-success-metrics-and-okrs.md",
+        "06-success-metrics-and-okrs.md",
+        "09-common-prd-mistakes.md"
+      ],
+      "router_use_web": false,
+      "router_expected": false,
+      "router_correct": true,
+      "retrieval": {
+        "hit@k": true,
+        "hit@3": true,
+        "reciprocal_rank": 1.0,
+        "context_precision": 0.6
+      },
+      "answer": "- Leading indicators move early and predict the lagging indicators. They are used to steer during the build and early launch. Examples include activation rate, time-to-first-value, and feature adoption. They help foresee outcomes like revenue or retention before they happen [1].\n- Lagging indicators confirm outcomes but change slowly. They reflect results after the fact, such as revenue, retention, and churn [1].\n\nAdditional context:\n- Both should be tracked in a PRD: leading metrics guide ongoing development and early launch, while lagging metrics judge lasting impact [1].\n- For each metric, state the baseline, target, and time window. This applies to both leading and lagging indicators to measure success meaningfully (e.g., \u201cIncrease checkout conversion from 2.1% to 3.0% within one quarter\u201d) [3].\n- Guardrails should accompany metrics to prevent gaming (e.g., avoid chasing engagement at the expense of quality) [4].\n- A PRD without metrics (leading or lagging) cannot be evaluated after launch; define baseline, target, and time window upfront [5].",
+      "judge": {
+        "correctness": 5,
+        "faithfulness": 5,
+        "relevancy": 5,
+        "rationale": "The answer accurately states the difference: leading indicators move early and predict lagging indicators, while lagging indicators confirm outcomes slowly; it aligns with the reference and uses examples from the retrieved context, and it notes the use of PRDs and baseline/target/time window."
+      }
+    },
+    {
+      "id": "kb-12",
+      "question": "What makes a good OKR?",
+      "category": "framework",
+      "retrieved_sources": [
+        "06-success-metrics-and-okrs.md",
+        "02-prd-structure-and-template.md",
+        "06-success-metrics-and-okrs.md",
+        "02-prd-structure-and-template.md",
+        "05-prioritization-frameworks.md"
+      ],
+      "router_use_web": false,
+      "router_expected": false,
+      "router_correct": true,
+      "retrieval": {
+        "hit@k": true,
+        "hit@3": true,
+        "reciprocal_rank": 1.0,
+        "context_precision": 0.4
+      },
+      "answer": "A good OKR combines a strong, memorable Objective with clearly measurable Key Results that reflect outcomes, not activities. Grounded in the provided context:\n\n- Objectives should be qualitative, inspirational, and directional. They should feel motivating and give a clear sense of direction (e.g., \"Make onboarding effortless\") [1].\n- Key Results must be measurable and outcome-based, not task lists. They quantify progress toward the Objective and should be tied to real outcomes (e.g., \"Increase day-7 retention from 30% to 45%\") [1].\n- Each Objective should have at least one measurable signal (i.e., metrics) so you can evaluate success after implementation. Metrics define what winning looks like and guide post-launch decisions [3].\n- Include baselines and targets where possible to show progress and establish a clear line of measurement [4].\n- Non-goals help prevent scope creep by explicitly naming what is out of scope, clarifying boundaries and focusing effort [2].\n\nIn short: a good OKR is memorable and directional at the Objective level, with 3\u20135 outcome-focused Key Results that have clear metrics (baseline and target) to determine success after launch. Include explicit non-goals to keep scope tight and measurable signals to define success [1][3][4][2].",
+      "judge": {
+        "correctness": 4,
+        "faithfulness": 4,
+        "relevancy": 4,
+        "rationale": "The answer accurately captures the core principles from the reference: strong qualitative, memorable Objectives; measurable, outcome-based Key Results (3\u20135 per objective); metrics, baselines, and targets; and inclusion of non-goals. It mostly aligns with the retrieved context. Some minor detail like explicit emphasis on 3\u20135 Key Results is present but could be stated more succinctly; overall, it remains faithful and relevant to the question."
+      }
+    },
+    {
+      "id": "kb-13",
+      "question": "What is the HEART framework?",
+      "category": "framework",
+      "retrieved_sources": [
+        "06-success-metrics-and-okrs.md",
+        "05-prioritization-frameworks.md",
+        "05-prioritization-frameworks.md",
+        "02-prd-structure-and-template.md",
+        "08-product-discovery.md"
+      ],
+      "router_use_web": false,
+      "router_expected": false,
+      "router_correct": true,
+      "retrieval": {
+        "hit@k": true,
+        "hit@3": true,
+        "reciprocal_rank": 1.0,
+        "context_precision": 0.2
+      },
+      "answer": "The HEART framework is a set of five user-experience metrics you can use to measure product health and outcomes. Each dimension has a goal, a signal, and a metric to track:\n\n- Happiness: measures satisfaction (e.g., NPS). [1]\n- Engagement: measures how often and deeply users interact (frequency, depth). [1]\n- Adoption: measures new users of a feature. [1]\n- Retention: measures users who return over time. [1]\n- Task success: measures completion-related outcomes (completion rate, error rate, time on task). [1]\n\nThe framework is intended as a structured conversation tool to help teams select appropriate goals, signals, and metrics, not a substitute for judgment. [1][2]",
+      "judge": {
+        "correctness": 4,
+        "faithfulness": 4,
+        "relevancy": 4,
+        "rationale": "The answer correctly defines HEART as five dimensions with goals, signals, and metrics and notes its use as a conversation tool. It aligns with the reference (lists the five dimensions and examples) and cites the retrieved context. Minor opportunity: could explicitly state the five dimensions as in the reference and emphasize the goal-signal-metric trio for each, but the essential content is accurate and faithful."
+      }
+    },
+    {
+      "id": "kb-14",
+      "question": "What are non-functional requirements?",
+      "category": "concept",
+      "retrieved_sources": [
+        "07-non-functional-requirements.md",
+        "09-common-prd-mistakes.md",
+        "04-acceptance-criteria.md",
+        "02-prd-structure-and-template.md",
+        "07-non-functional-requirements.md"
+      ],
+      "router_use_web": false,
+      "router_expected": false,
+      "router_correct": true,
+      "retrieval": {
+        "hit@k": true,
+        "hit@3": true,
+        "reciprocal_rank": 1.0,
+        "context_precision": 0.4
+      },
+      "answer": "Non-functional requirements (NFRs) describe how well the system must perform its functions, focusing on quality attributes rather than specific features. They cover aspects such as performance, scalability, reliability, security, privacy, accessibility, usability, maintainability, and compliance. They are easy to forget and expensive to retrofit, so they should be defined with concrete, testable metrics. Each NFR must have acceptance criteria or a measurable threshold so QA can verify it. [1][5]\n\nKey points:\n- NFRs specify quality attributes, not functions themselves. [1]\n- They must be testable with concrete metrics and thresholds; vague statements like \"fast\" or \"user-friendly\" are not NFRs without measurable criteria. [2][5]\n- Strong acceptance criteria should include edge cases, error handling, and various states to ensure testability. [3]",
+      "judge": {
+        "correctness": 5,
+        "faithfulness": 5,
+        "relevancy": 5,
+        "rationale": "The answer accurately defines non-functional requirements as quality attributes, lists typical categories, emphasizes measurability and testability with concrete metrics, and aligns with the reference guidance and retrieved context."
+      }
+    },
+    {
+      "id": "kb-15",
+      "question": "What accessibility standard should a product target?",
+      "category": "concept",
+      "retrieved_sources": [
+        "07-non-functional-requirements.md",
+        "02-prd-structure-and-template.md",
+        "02-prd-structure-and-template.md",
+        "07-non-functional-requirements.md",
+        "09-common-prd-mistakes.md"
+      ],
+      "router_use_web": false,
+      "router_expected": false,
+      "router_correct": true,
+      "retrieval": {
+        "hit@k": true,
+        "hit@3": true,
+        "reciprocal_rank": 1.0,
+        "context_precision": 0.4
+      },
+      "answer": "- Target WCAG 2.1 AA as the accessibility standard. This is stated as the recommended default Non-Functional Requirement (NFR) for any user-facing product, covering keyboard navigation, color contrast, screen-reader support, and clear focus states [1]. It\u2019s also referenced as the accessibility standard within the broader quality attributes framework [4].",
+      "judge": {
+        "correctness": 5,
+        "faithfulness": 5,
+        "relevancy": 5,
+        "rationale": "The answer correctly states WCAG 2.1 AA as the default accessibility standard and aligns with the reference that lists keyboard navigation, color contrast, screen-reader support, and clear focus states as the targets; it also connects to the broader quality attributes context."
+      }
+    },
+    {
+      "id": "kb-16",
+      "question": "What is Jobs To Be Done?",
+      "category": "framework",
+      "retrieved_sources": [
+        "08-product-discovery.md",
+        "08-product-discovery.md",
+        "02-prd-structure-and-template.md",
+        "08-product-discovery.md",
+        "02-prd-structure-and-template.md"
+      ],
+      "router_use_web": false,
+      "router_expected": false,
+      "router_correct": true,
+      "retrieval": {
+        "hit@k": true,
+        "hit@3": true,
+        "reciprocal_rank": 1.0,
+        "context_precision": 0.6
+      },
+      "answer": "Jobs To Be Done (JTBD) is a framing that asks what \u201cjob\u201d a user hires a product to do\u2014the underlying goal and the circumstances\u2014rather than focusing on demographics. It centers outcomes: defining the specific job (the task the user wants to accomplish) and the context in which they experience the pain [1]. This helps keep product work anchored to real user needs and measurable outcomes instead of broad segments or features. For example, framing a need as \u201cWhen I onboard a new client, I want to gather their documents quickly, so I can start work sooner\u201d highlights the outcome and context, not the solution [1]. \n\nKey related ideas:\n- JTBD sits within a broader product-discovery mindset that focuses on deciding what to build before delivery to reduce the risk of solving the wrong problem [4].\n- It works alongside clearly defined segments (personas, jobs-to-be-done, and context) to avoid vague \u201ceveryone\u201d targets; specificity improves requirements [3].\n\nIn short: JTBD is a user-outcome\u2013centered lens that identifies the job the user wants to hire the product for, along with the circumstances, to guide discovery and solution framing [1].",
+      "judge": {
+        "correctness": 5,
+        "faithfulness": 5,
+        "relevancy": 5,
+        "rationale": "Answer accurately defines JTBD, emphasizes outcomes and context, cites the example and aligns with retrieved context (1,3,4) without introducing unsupported claims."
+      }
+    },
+    {
+      "id": "kb-17",
+      "question": "What are the four big product risks to address in discovery?",
+      "category": "framework",
+      "retrieved_sources": [
+        "08-product-discovery.md",
+        "08-product-discovery.md",
+        "08-product-discovery.md",
+        "02-prd-structure-and-template.md",
+        "02-prd-structure-and-template.md"
+      ],
+      "router_use_web": false,
+      "router_expected": false,
+      "router_correct": true,
+      "retrieval": {
+        "hit@k": true,
+        "hit@3": true,
+        "reciprocal_rank": 1.0,
+        "context_precision": 0.6
+      },
+      "answer": "The four big product risks to address in discovery are:\n\n- Value risk: Will people use or buy it? [1]\n- Usability risk: Can they figure out how to use it? [1]\n- Feasibility risk: Can we build it with the time, skills, and technology we have? [1]\n- Business viability risk: Does it work for our business, legal, and brand? [1]\n\nThese risks are typically explored through discovery techniques (customer interviews, surveys, analytics, competitive analysis, prototype testing, small experiments) to move assumptions from guess to validated beliefs before heavy engineering begins. [2]",
+      "judge": {
+        "correctness": 5,
+        "faithfulness": 5,
+        "relevancy": 5,
+        "rationale": "The answer precisely lists the four big product risks (value, usability, feasibility, business viability) and matches the reference wording, then notes they are explored via discovery techniques as per the retrieved context."
+      }
+    },
+    {
+      "id": "kb-18",
+      "question": "What are the most common PRD mistakes?",
+      "category": "concept",
+      "retrieved_sources": [
+        "09-common-prd-mistakes.md",
+        "09-common-prd-mistakes.md",
+        "01-what-is-a-prd.md",
+        "09-common-prd-mistakes.md",
+        "01-what-is-a-prd.md"
+      ],
+      "router_use_web": false,
+      "router_expected": false,
+      "router_correct": true,
+      "retrieval": {
+        "hit@k": true,
+        "hit@3": true,
+        "reciprocal_rank": 1.0,
+        "context_precision": 0.6
+      },
+      "answer": "Common PRD mistakes, grounded in the provided context:\n\n- Leading with a solution instead of the problem\n  - Describing a feature like \"add a dashboard\" before understanding the problem locks the team into one answer and bypasses validating whether it\u2019s the right approach [1].\n\n- An overlong, unstructured PRD\n  - A PRD that is not skimmable and well-structured behaves like no PRD at all. The remedy is a crisp summary, clear IDs, short sections, and prefer tables over prose; surface open questions rather than burying them [2].\n\n- Not grounding the PRD in the three core questions\n  - A good PRD should answer what problem we are solving, for whom, and how we will know we succeeded; it should translate strategy into concrete, buildable requirements and serve as a communication tool first, then a specification [3].\n\n- Lacking engineering input\n  - A PRD written without engineering input can specify impractical requirements or overlook cheaper alternatives. Involve engineering early so requirements reflect what is buildable [4].\n\n- Treating the PRD as static\n  - A PRD is a living document that should be versioned, dated, and updated as learning occurs; open questions should shrink over time. A PRD that never changes after kickoff usually indicates it\u2019s being ignored [5].",
+      "judge": {
+        "correctness": 5,
+        "faithfulness": 5,
+        "relevancy": 5,
+        "rationale": "The answer accurately lists the common PRD mistakes exactly as in the reference, with faithful paraphrase and directly relevant to the question."
+      }
+    },
+    {
+      "id": "web-01",
+      "question": "What new features did Atlassian announce for Jira product teams in 2025?",
+      "category": "web",
+      "retrieved_sources": [
+        "05-prioritization-frameworks.md",
+        "02-prd-structure-and-template.md",
+        "07-non-functional-requirements.md",
+        "03-writing-user-stories.md",
+        "08-product-discovery.md"
+      ],
+      "router_use_web": true,
+      "router_expected": true,
+      "router_correct": true
+    },
+    {
+      "id": "web-02",
+      "question": "What are the latest AI features in Notion for product managers this year?",
+      "category": "web",
+      "retrieved_sources": [
+        "05-prioritization-frameworks.md",
+        "05-prioritization-frameworks.md",
+        "05-prioritization-frameworks.md",
+        "08-product-discovery.md",
+        "01-what-is-a-prd.md"
+      ],
+      "router_use_web": true,
+      "router_expected": true,
+      "router_correct": true
+    },
+    {
+      "id": "oos-01",
+      "question": "What's the weather in New York today?",
+      "category": "out_of_scope",
+      "retrieved_sources": [
+        "02-prd-structure-and-template.md",
+        "02-prd-structure-and-template.md",
+        "02-prd-structure-and-template.md",
+        "07-non-functional-requirements.md",
+        "04-acceptance-criteria.md"
+      ],
+      "router_use_web": false,
+      "router_expected": true,
+      "router_correct": false
+    }
+  ]
+}

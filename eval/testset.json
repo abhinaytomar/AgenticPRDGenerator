@@ -1,0 +1,173 @@
+{
+  "description": "Gold evaluation set for the PRD Generator FAQ (Agentic RAG). Each item has a reference answer, the corpus document(s) that should be retrieved, and whether the router should escalate to web search.",
+  "items": [
+    {
+      "id": "kb-01",
+      "question": "What is a Product Requirements Document?",
+      "ground_truth": "A PRD is a written specification describing what a product or feature should do, who it is for, and why it is worth building. It is the shared source of truth that aligns product, engineering, design, and business stakeholders on the definition of done before implementation.",
+      "expected_sources": ["01-what-is-a-prd.md"],
+      "category": "concept",
+      "expects_web": false
+    },
+    {
+      "id": "kb-02",
+      "question": "Who owns the PRD on a product team?",
+      "ground_truth": "The product manager owns the PRD, but it is written collaboratively: engineering validates feasibility, design shapes the UX, and stakeholders confirm the business case. The PM is accountable for keeping it coherent and current.",
+      "expected_sources": ["01-what-is-a-prd.md"],
+      "category": "concept",
+      "expects_web": false
+    },
+    {
+      "id": "kb-03",
+      "question": "What sections should a PRD contain?",
+      "ground_truth": "A comprehensive PRD contains an overview and objectives, problem statement, target users, goals and non-goals, assumptions and dependencies, functional requirements, non-functional requirements, user flows, success metrics, risks and mitigations, and open questions.",
+      "expected_sources": ["02-prd-structure-and-template.md"],
+      "category": "concept",
+      "expects_web": false
+    },
+    {
+      "id": "kb-04",
+      "question": "Why should a PRD include non-goals?",
+      "ground_truth": "Non-goals explicitly name what is out of scope. They prevent scope creep, clarify boundaries, and set stakeholder expectations, which makes them one of the highest-leverage sections in a PRD.",
+      "expected_sources": ["02-prd-structure-and-template.md", "09-common-prd-mistakes.md"],
+      "category": "concept",
+      "expects_web": false
+    },
+    {
+      "id": "kb-05",
+      "question": "How do I write a good user story?",
+      "ground_truth": "Use the format 'As a [type of user], I want [goal] so that [benefit],' where the 'so that' clause states the value. Good stories follow INVEST: Independent, Negotiable, Valuable, Estimable, Small, and Testable.",
+      "expected_sources": ["03-writing-user-stories.md"],
+      "category": "framework",
+      "expects_web": false
+    },
+    {
+      "id": "kb-06",
+      "question": "How do I split a user story that is too big?",
+      "ground_truth": "Split a large story (epic) along meaningful boundaries: by workflow step, by user role, by data variation, by happy path versus edge cases, or by CRUD operations. Avoid splitting by technical layer such as backend then frontend, because neither half delivers user value alone.",
+      "expected_sources": ["03-writing-user-stories.md"],
+      "category": "framework",
+      "expects_web": false
+    },
+    {
+      "id": "kb-07",
+      "question": "What is the Given/When/Then format for acceptance criteria?",
+      "ground_truth": "Given/When/Then (Gherkin) expresses a testable condition as 'Given [context], When [action], Then [outcome].' It is precise, unambiguous, and maps directly to automated tests.",
+      "expected_sources": ["04-acceptance-criteria.md"],
+      "category": "framework",
+      "expects_web": false
+    },
+    {
+      "id": "kb-08",
+      "question": "How many acceptance criteria should a user story have?",
+      "ground_truth": "Aim for at least two to five acceptance criteria per story. Too few usually means edge cases are missing; too many often means the story should be split. Criteria should cover unhappy paths, not just the happy path.",
+      "expected_sources": ["04-acceptance-criteria.md"],
+      "category": "concept",
+      "expects_web": false
+    },
+    {
+      "id": "kb-09",
+      "question": "When should I use RICE versus MoSCoW for prioritization?",
+      "ground_truth": "Use RICE when you have data and want a comparable numeric ranking (Reach x Impact x Confidence / Effort). Use MoSCoW (Must/Should/Could/Won't) for fast scope buckets within a release, capping the Must list so it doesn't absorb everything.",
+      "expected_sources": ["05-prioritization-frameworks.md"],
+      "category": "framework",
+      "expects_web": false
+    },
+    {
+      "id": "kb-10",
+      "question": "What is the RICE scoring formula?",
+      "ground_truth": "RICE score = (Reach x Impact x Confidence) / Effort. Reach is how many users are affected in a period, Impact is per-user effect on the goal, Confidence is a percentage discount for uncertainty, and Effort is person-months.",
+      "expected_sources": ["05-prioritization-frameworks.md"],
+      "category": "framework",
+      "expects_web": false
+    },
+    {
+      "id": "kb-11",
+      "question": "What is the difference between leading and lagging indicators?",
+      "ground_truth": "Lagging indicators (revenue, retention, churn) confirm outcomes but move slowly. Leading indicators (activation rate, time-to-first-value, feature adoption) move early and predict the lagging ones. Good PRDs track both.",
+      "expected_sources": ["06-success-metrics-and-okrs.md"],
+      "category": "concept",
+      "expects_web": false
+    },
+    {
+      "id": "kb-12",
+      "question": "What makes a good OKR?",
+      "ground_truth": "A strong Objective is qualitative, memorable, and directional; strong Key Results are quantitative, measurable, and outcome-based (not task lists), typically three to five per objective. Key results measure results, not activity.",
+      "expected_sources": ["06-success-metrics-and-okrs.md"],
+      "category": "framework",
+      "expects_web": false
+    },
+    {
+      "id": "kb-13",
+      "question": "What is the HEART framework?",
+      "ground_truth": "Google's HEART framework measures user experience across five dimensions: Happiness, Engagement, Adoption, Retention, and Task success. For each, you define a Goal, a Signal, and a Metric.",
+      "expected_sources": ["06-success-metrics-and-okrs.md"],
+      "category": "framework",
+      "expects_web": false
+    },
+    {
+      "id": "kb-14",
+      "question": "What are non-functional requirements?",
+      "ground_truth": "Non-functional requirements describe how well a system performs its functions rather than what it does: performance, scalability, reliability, security, privacy, accessibility, usability, and maintainability. Each should be measurable with a concrete threshold.",
+      "expected_sources": ["07-non-functional-requirements.md"],
+      "category": "concept",
+      "expects_web": false
+    },
+    {
+      "id": "kb-15",
+      "question": "What accessibility standard should a product target?",
+      "ground_truth": "Target WCAG 2.1 AA as a default: keyboard navigation, sufficient color contrast, screen-reader support, and clear focus states. Accessibility is both an ethical obligation and, in many jurisdictions, a legal one.",
+      "expected_sources": ["07-non-functional-requirements.md"],
+      "category": "concept",
+      "expects_web": false
+    },
+    {
+      "id": "kb-16",
+      "question": "What is Jobs To Be Done?",
+      "ground_truth": "Jobs To Be Done is a lens that asks what job a user 'hires' the product to do, focusing on the underlying goal and circumstances rather than demographics. It keeps the team anchored on outcomes.",
+      "expected_sources": ["08-product-discovery.md"],
+      "category": "framework",
+      "expects_web": false
+    },
+    {
+      "id": "kb-17",
+      "question": "What are the four big product risks to address in discovery?",
+      "ground_truth": "Value risk (will people use or buy it?), usability risk (can they figure out how to use it?), feasibility risk (can we build it?), and business viability risk (does it work for the business, legally, and for the brand?).",
+      "expected_sources": ["08-product-discovery.md"],
+      "category": "framework",
+      "expects_web": false
+    },
+    {
+      "id": "kb-18",
+      "question": "What are the most common PRD mistakes?",
+      "ground_truth": "Solutionizing too early, vague or untestable requirements, missing non-goals, no success metrics, ignoring edge cases and errors, writing for 'all users,' overlong unstructured documents, and treating the PRD as fixed rather than living.",
+      "expected_sources": ["09-common-prd-mistakes.md"],
+      "category": "concept",
+      "expects_web": false
+    },
+    {
+      "id": "web-01",
+      "question": "What new features did Atlassian announce for Jira product teams in 2025?",
+      "ground_truth": "This requires current public information not in the knowledge base; the assistant should escalate to web search and answer from cited web sources.",
+      "expected_sources": [],
+      "category": "web",
+      "expects_web": true
+    },
+    {
+      "id": "web-02",
+      "question": "What are the latest AI features in Notion for product managers this year?",
+      "ground_truth": "This requires current public information not in the knowledge base; the assistant should escalate to web search and answer from cited web sources.",
+      "expected_sources": [],
+      "category": "web",
+      "expects_web": true
+    },
+    {
+      "id": "oos-01",
+      "question": "What's the weather in New York today?",
+      "ground_truth": "This is out of scope for a product-management assistant; the ideal behavior is to decline or state that it cannot help with this from its sources.",
+      "expected_sources": [],
+      "category": "out_of_scope",
+      "expects_web": true
+    }
+  ]
+}
