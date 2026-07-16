@@ -1,0 +1,39 @@
+# ── Secrets (NEVER commit) ───────────────────────────────
+.env
+.env*.local
+.env.local
+*.pem
+
+# ── Node / Next.js ───────────────────────────────────────
+node_modules/
+.next/
+out/
+build/
+dist/
+.turbo/
+
+# ── Vercel ───────────────────────────────────────────────
+.vercel/
+
+# ── Python ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ── Logs / OS / editor ───────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# ── Keep the example env in the repo ─────────────────────
+!.env.example

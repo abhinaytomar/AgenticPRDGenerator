@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /c/Users/abhin/Projects/PRDGenerator && npm run build 2>&1)",
+      "Bash(cd /c/Users/abhin/Projects/PRDGenerator && rm -rf .next && npm run build 2>&1)",
+      "Bash(cd /c/Users/abhin/Projects/PRDGenerator && npm run lint 2>&1)",
+      "Bash(cd \"C:/Users/abhin/Projects/AgenticPRDGenerator\" && npm run build 2>&1)",
+      "Bash(cd \"C:/Users/abhin/Projects/AgenticPRDGenerator\" && npm run lint 2>&1)",
+      "Bash(cd \"C:/Users/abhin/Projects/AgenticPRDGenerator\" && npm run build 2>&1 && npm run lint 2>&1)",
+      "Bash(cd \"C:/Users/abhin/Projects/AgenticPRDGenerator\" && python -c \"from api.index import app; print\\('Backend imports OK. Routes:', [r.path for r in app.routes]\\)\" 2>&1)",
+      "Bash(cd \"C:/Users/abhin/Projects/AgenticPRDGenerator\" && python -c \"\nimport ast, sys, pathlib\n\nfiles = list\\(pathlib.Path\\('api'\\).rglob\\('*.py'\\)\\)\nerrors = []\nfor f in files:\n    try:\n        ast.parse\\(f.read_text\\(\\)\\)\n    except SyntaxError as e:\n        errors.append\\(f'{f}: {e}'\\)\n\nif errors:\n    for e in errors:\n        print\\(f'ERROR: {e}'\\)\n    sys.exit\\(1\\)\nelse:\n    print\\(f'All {len\\(files\\)} Python files parse successfully'\\)\n    for f in sorted\\(files\\):\n        print\\(f'  {f}'\\)\n\" 2>&1)",
+      "Bash(tail:*)",
+      "Bash(sleep 5 && curl -s http://localhost:8000/docs | head -5 2>&1)",
+      "Bash(python:*)",
+      "Bash(curl:*)"
+    ]
+  }
+}
